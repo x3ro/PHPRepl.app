@@ -1,0 +1,13 @@
+# Build artifacts
+
+boris/
+php/
+php.tar.gz
+
+
+# Added by gemignore. Snippet 'Global/vim'
+.*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~

@@ -1,0 +1,1 @@
+PATH=\"%@/Contents/Resources/php/bin:$PATH\" %@/Contents/Resources/boris/bin/boris

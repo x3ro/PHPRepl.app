@@ -13,7 +13,20 @@
 		A06FC5FD173D7FBC00E60877 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A06FC5FB173D7FBC00E60877 /* Credits.rtf */; };
 		A06FC600173D7FBC00E60877 /* PRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FC5FF173D7FBC00E60877 /* PRAppDelegate.m */; };
 		A06FC603173D7FBD00E60877 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06FC601173D7FBD00E60877 /* MainMenu.xib */; };
+		A0A10201173E69A80091DAB5 /* iTerm2.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0A10200173E69A80091DAB5 /* iTerm2.txt */; };
+		A0A10207173E734D0091DAB5 /* BorisCommand.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0A10206173E734D0091DAB5 /* BorisCommand.txt */; };
+		A0A10209173E78EC0091DAB5 /* Terminal.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0A10208173E78EC0091DAB5 /* Terminal.txt */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0A101FE173E67490091DAB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A06FC5E1173D7FBC00E60877 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A06FC5E8173D7FBC00E60877;
+			remoteInfo = PHPRepl;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A06FC5E9173D7FBC00E60877 /* PHPRepl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHPRepl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +42,9 @@
 		A06FC5FE173D7FBC00E60877 /* PRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRAppDelegate.h; sourceTree = "<group>"; };
 		A06FC5FF173D7FBC00E60877 /* PRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRAppDelegate.m; sourceTree = "<group>"; };
 		A06FC602173D7FBD00E60877 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A0A10200173E69A80091DAB5 /* iTerm2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iTerm2.txt; sourceTree = "<group>"; };
+		A0A10206173E734D0091DAB5 /* BorisCommand.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BorisCommand.txt; sourceTree = "<group>"; };
+		A0A10208173E78EC0091DAB5 /* Terminal.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Terminal.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +114,32 @@
 				A06FC5F8173D7FBC00E60877 /* main.m */,
 				A06FC5FA173D7FBC00E60877 /* PHPRepl-Prefix.pch */,
 				A06FC5FB173D7FBC00E60877 /* Credits.rtf */,
+				A0A10200173E69A80091DAB5 /* iTerm2.txt */,
+				A0A10206173E734D0091DAB5 /* BorisCommand.txt */,
+				A0A10208173E78EC0091DAB5 /* Terminal.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		A06FC87A173E66F600E60877 /* makefile */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) BUILD_DIR=\"$(CONFIGURATION_BUILD_DIR)\"";
+			buildConfigurationList = A06FC87B173E66F600E60877 /* Build configuration list for PBXLegacyTarget "makefile" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "${SOURCE_ROOT}/PHPRepl/";
+			dependencies = (
+				A0A101FF173E67490091DAB5 /* PBXTargetDependency */,
+			);
+			name = makefile;
+			passBuildSettingsInEnvironment = 1;
+			productName = makefile;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		A06FC5E8173D7FBC00E60877 /* PHPRepl */ = {
@@ -145,6 +182,7 @@
 			projectRoot = "";
 			targets = (
 				A06FC5E8173D7FBC00E60877 /* PHPRepl */,
+				A06FC87A173E66F600E60877 /* makefile */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +195,9 @@
 				A06FC5F7173D7FBC00E60877 /* InfoPlist.strings in Resources */,
 				A06FC5FD173D7FBC00E60877 /* Credits.rtf in Resources */,
 				A06FC603173D7FBD00E60877 /* MainMenu.xib in Resources */,
+				A0A10201173E69A80091DAB5 /* iTerm2.txt in Resources */,
+				A0A10207173E734D0091DAB5 /* BorisCommand.txt in Resources */,
+				A0A10209173E78EC0091DAB5 /* Terminal.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +214,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0A101FF173E67490091DAB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A06FC5E8173D7FBC00E60877 /* PHPRepl */;
+			targetProxy = A0A101FE173E67490091DAB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A06FC5F5173D7FBC00E60877 /* InfoPlist.strings */ = {
@@ -285,6 +334,27 @@
 			};
 			name = Release;
 		};
+		A06FC87C173E66F600E60877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A06FC87D173E66F600E60877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -304,6 +374,16 @@
 				A06FC608173D7FBD00E60877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A06FC87B173E66F600E60877 /* Build configuration list for PBXLegacyTarget "makefile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06FC87C173E66F600E60877 /* Debug */,
+				A06FC87D173E66F600E60877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
