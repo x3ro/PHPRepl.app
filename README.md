@@ -18,7 +18,10 @@ Normally you'll want to simply [download the App](x3ro.de/downloads/PHPRepl.app.
 1. The Cocoa application is built by Xcode
 2. My custom makefile compiles PHP, downloads Boris and copies everything into the App Bundle
 
-If you're having issues building PHPRepl.app, please let me know!
+
+## Having problems?
+
+Since PHPRepl.app is a very young project, it is likely that some issues are still hiding in the shadows. If you should happen to encouter one, create an issue in the bugtracker, or even better fix the bug and create a pull request :) This of course also applies to issues building the project yourself.
 
 
 ## License
