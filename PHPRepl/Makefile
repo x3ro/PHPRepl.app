@@ -29,9 +29,9 @@ boris:
 	rm -rf boris/.git
 
 clean:
-	#rm -f php.tar.gz
-	#rm -rf php
-	#rm -rf boris
+	rm -f php.tar.gz
+	rm -rf php
+	rm -rf boris
 
 
 
