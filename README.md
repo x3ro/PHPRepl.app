@@ -13,7 +13,7 @@ Because there should be an easily installable and usable REPL for every programm
 
 ## Usage
 
-Normally you'll want to simply [download the App](x3ro.de/downloads/PHPRepl.app.v0.1.zip). You can also try to build the app yourself. The build process is fairly straight forward:
+Normally you'll want to simply [download the App](http://x3ro.de/downloads/PHPRepl.app.v0.1.zip). You can also try to build the app yourself. The build process is fairly straight forward:
 
 1. The Cocoa application is built by Xcode
 2. My custom makefile compiles PHP, downloads Boris and copies everything into the App Bundle
