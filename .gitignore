@@ -33,3 +33,5 @@ profile
 DerivedData
 .idea/
 *.hmap
+
+psysh/

@@ -31,7 +31,7 @@
  */
 - (NSString*)iTermScript {
     NSString* string = [self stringWithContentsOfResource:@"iTerm2" ofType:@"txt"];
-    return [NSString stringWithFormat:string, [self borisCommand]];
+    return [NSString stringWithFormat:string, [self psyshCommand]];
 }
 
 /**
@@ -39,7 +39,7 @@
  */
 - (NSString*)terminalScript {
     NSString* string = [self stringWithContentsOfResource:@"Terminal" ofType:@"txt"];
-    return [NSString stringWithFormat:string, [self borisCommand]];
+    return [NSString stringWithFormat:string, [self psyshCommand]];
 }
 
 /**
@@ -54,8 +54,8 @@
 /**
  * Generates the command that starts the Boris REPL inside a terminal.
  */
--(NSString*)borisCommand {
-    NSString* string = [self stringWithContentsOfResource:@"BorisCommand" ofType:@"txt"];
+-(NSString*)psyshCommand {
+    NSString* string = [self stringWithContentsOfResource:@"PsyshCommand" ofType:@"txt"];
     NSString* path = [[NSBundle mainBundle] bundlePath];
     return [NSString stringWithFormat:string, path, path];
 }
