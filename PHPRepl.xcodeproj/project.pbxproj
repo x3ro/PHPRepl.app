@@ -10,11 +10,10 @@
 		A06FC5ED173D7FBC00E60877 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06FC5EC173D7FBC00E60877 /* Cocoa.framework */; };
 		A06FC5F7173D7FBC00E60877 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A06FC5F5173D7FBC00E60877 /* InfoPlist.strings */; };
 		A06FC5F9173D7FBC00E60877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FC5F8173D7FBC00E60877 /* main.m */; };
-		A06FC5FD173D7FBC00E60877 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A06FC5FB173D7FBC00E60877 /* Credits.rtf */; };
 		A06FC600173D7FBC00E60877 /* PRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FC5FF173D7FBC00E60877 /* PRAppDelegate.m */; };
 		A06FC603173D7FBD00E60877 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06FC601173D7FBD00E60877 /* MainMenu.xib */; };
 		A0A10201173E69A80091DAB5 /* iTerm2.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0A10200173E69A80091DAB5 /* iTerm2.txt */; };
-		A0A10207173E734D0091DAB5 /* BorisCommand.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0A10206173E734D0091DAB5 /* BorisCommand.txt */; };
+		A0A10207173E734D0091DAB5 /* PsyshCommand.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0A10206173E734D0091DAB5 /* PsyshCommand.txt */; };
 		A0A10209173E78EC0091DAB5 /* Terminal.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0A10208173E78EC0091DAB5 /* Terminal.txt */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +42,7 @@
 		A06FC5FF173D7FBC00E60877 /* PRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRAppDelegate.m; sourceTree = "<group>"; };
 		A06FC602173D7FBD00E60877 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A0A10200173E69A80091DAB5 /* iTerm2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iTerm2.txt; sourceTree = "<group>"; };
-		A0A10206173E734D0091DAB5 /* BorisCommand.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BorisCommand.txt; sourceTree = "<group>"; };
+		A0A10206173E734D0091DAB5 /* PsyshCommand.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PsyshCommand.txt; sourceTree = "<group>"; };
 		A0A10208173E78EC0091DAB5 /* Terminal.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Terminal.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +114,7 @@
 				A06FC5FA173D7FBC00E60877 /* PHPRepl-Prefix.pch */,
 				A06FC5FB173D7FBC00E60877 /* Credits.rtf */,
 				A0A10200173E69A80091DAB5 /* iTerm2.txt */,
-				A0A10206173E734D0091DAB5 /* BorisCommand.txt */,
+				A0A10206173E734D0091DAB5 /* PsyshCommand.txt */,
 				A0A10208173E78EC0091DAB5 /* Terminal.txt */,
 			);
 			name = "Supporting Files";
@@ -149,6 +148,7 @@
 				A06FC5E5173D7FBC00E60877 /* Sources */,
 				A06FC5E6173D7FBC00E60877 /* Frameworks */,
 				A06FC5E7173D7FBC00E60877 /* Resources */,
+				A04D04A41D1C8B2000A09765 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -166,7 +166,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PR;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Lucas Jenß";
 			};
 			buildConfigurationList = A06FC5E4173D7FBC00E60877 /* Build configuration list for PBXProject "PHPRepl" */;
@@ -193,15 +193,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				A06FC5F7173D7FBC00E60877 /* InfoPlist.strings in Resources */,
-				A06FC5FD173D7FBC00E60877 /* Credits.rtf in Resources */,
 				A06FC603173D7FBD00E60877 /* MainMenu.xib in Resources */,
 				A0A10201173E69A80091DAB5 /* iTerm2.txt in Resources */,
-				A0A10207173E734D0091DAB5 /* BorisCommand.txt in Resources */,
+				A0A10207173E734D0091DAB5 /* PsyshCommand.txt in Resources */,
 				A0A10209173E78EC0091DAB5 /* Terminal.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A04D04A41D1C8B2000A09765 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd PHPRepl && make";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A06FC5E5173D7FBC00E60877 /* Sources */ = {
@@ -255,7 +270,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -265,6 +279,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -288,7 +303,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -317,6 +331,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PHPRepl/PHPRepl-Prefix.pch";
 				INFOPLIST_FILE = "PHPRepl/PHPRepl-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.x3ro.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -329,6 +344,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PHPRepl/PHPRepl-Prefix.pch";
 				INFOPLIST_FILE = "PHPRepl/PHPRepl-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.x3ro.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
